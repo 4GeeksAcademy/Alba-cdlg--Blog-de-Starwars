@@ -1,1 +1,0 @@
-// Para añadir los favoritos y poder eliminar de la lista. 
