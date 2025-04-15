@@ -1,5 +1,9 @@
+import Layout from "./components/Layout";
+
 const App = () => {
-  return <div>Hola App</div>;
+  return (
+    <Layout />
+  )
 };
 
 export default App;
