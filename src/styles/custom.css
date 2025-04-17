@@ -2,3 +2,8 @@ body {
     background-color: #f8f9fa;
 }
 
+.logo-navbar {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
