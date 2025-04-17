@@ -10,6 +10,14 @@ const Navbar = () => {
                 />
             </a>
         </div>
+        <div className="dropdown">
+            <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Favoritos
+            </button>
+            <ul className="dropdown-menu dropdown-menu-end">
+                <li className="dropdown-item text-muted">No Favoritos</li>
+            </ul>
+        </div>
     </nav>
 )
 }
