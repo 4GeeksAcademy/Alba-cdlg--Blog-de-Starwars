@@ -7,7 +7,7 @@ export const getPlanets = async () => {
     return data.results;
 };
 
-export const getPlanetsById = async(id) => {
+export const getPlanetById = async(id) => {
     const response = await fetch('${BASE_URL}/planets/${id}');
     if (!response.ok) throw new Error('Error fetching planet');
     return await response.json();

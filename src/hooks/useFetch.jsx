@@ -19,7 +19,7 @@ export const useFetch = (fetchFunction, id = null) => {
     };
 
     fetchData();
-  } [fetchFunction, id]);
+  }, [fetchFunction, id]);
 
   return{data, loading, error}
 };

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const CardPlanet = ({ planet, uid }) => {
   return (
     <div className="card">
@@ -21,5 +23,4 @@ const CardPlanet = ({ planet, uid }) => {
   );
 };
 
-
-export default CardPlanet
+export default CardPlanet;
