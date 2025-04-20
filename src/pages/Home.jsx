@@ -1,14 +1,14 @@
-// Aquí estaba Rigo. 
+const Home = () => {
+  return (
+    <>
+      <h1>Star Wars Explorer</h1>
 
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+	  <h2>Planetas</h2>
 
-export const Home = () => {
+	  <div className="row">
+		
+	  </div>
 
-  const {store, dispatch} =useGlobalReducer()
-
-	return (
-		<div className="text-center mt-5">
-			
-		</div>
-	);
-}; 
+    </>
+  );
+};
