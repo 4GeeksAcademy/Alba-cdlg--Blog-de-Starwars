@@ -10,7 +10,7 @@ const PlanetDetail = () => {
 
   return (
     <div>
-      <h1>{planets.properties.name}</h1>
+      <h1>{planet.properties.name}</h1>
     </div>
   );
 };

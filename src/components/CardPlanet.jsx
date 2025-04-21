@@ -12,7 +12,7 @@ const CardPlanet = ({ planet, uid }) => {
         <h5 className="card-text">{planet.name}</h5>
       </div>
       <div className="d-flex justify-content-between">
-        <Link to={"/planet/${uid}"} className="btn btn-primary">
+        <Link to={`/planet/${uid}`} className="btn btn-primary">
           Más información
         </Link>
         <button className="">
