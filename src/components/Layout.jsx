@@ -1,11 +1,11 @@
-import { Children } from "react";
+import { children } from "react";
 import Navbar from "./Navbar";
 
-const Layout = ({ Children }) => {
+const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      <div className="container mt-4">{Children}</div>
+      <div className="container mt-4">{children}</div>
     </>
   );
 };
