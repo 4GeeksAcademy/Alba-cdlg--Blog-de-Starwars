@@ -11,3 +11,13 @@ body {
 .card-img-top {
     object-fit: cover;
 }
+
+.favorite-btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.favorite-btn.active {
+    color: gold;
+}
