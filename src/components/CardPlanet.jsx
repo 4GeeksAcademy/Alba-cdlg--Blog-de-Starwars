@@ -1,6 +1,19 @@
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../context/GlobalContext";
 
 const CardPlanet = ({ planet, uid }) => {
+  const { state, dispatch } = useGlobalContext();
+
+  const isFavorite = state.favorites.some((fav) => fav.id === uid);
+
+  const handleFavorite = () => {
+    if (isFavorite) {
+      dispatch({ type: "REMOVE_FAVORITE", payload: item });
+    } else {
+      dispatch({ type: "ADD_FAVORITE", payload: {uid, name: planet.name} });
+    }
+  }
+
   return (
     <div className="card">
       <img
@@ -15,7 +28,10 @@ const CardPlanet = ({ planet, uid }) => {
         <Link to={`/planet/${uid}`} className="btn btn-primary">
           Más información
         </Link>
-        <button className="">
+        <button
+          className={`favorite-btn ${isFavorite ? "active" : ""}`}
+          onClick={handleFavorite}
+        >
           <i className="bi bi-heart-fill"></i>
         </button>
       </div>

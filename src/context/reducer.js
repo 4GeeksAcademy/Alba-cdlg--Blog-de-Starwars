@@ -5,9 +5,17 @@ export const initialState = {
 export const reducer = (state, action) => {
   switch (action.type) {
     case "ADD_FAVORITE":
-      return "";
+      return  {
+        ...state,
+        favorites: [...state.favorites, action.payload]
+      }
     case "REMOVE_FAVORITE":
-      return "";
+      return {
+        ...state, 
+        favorites: [...state.favorites.filter(
+            (item) => item.uid != action.payload.uid
+        )],
+      };
     default:
       return state;
   }
