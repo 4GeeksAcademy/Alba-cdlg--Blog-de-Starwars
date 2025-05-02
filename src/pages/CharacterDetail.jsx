@@ -32,7 +32,15 @@ const CharacterDetail = () => {
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget
-            viverra nulla sem vitae neque...
+            viverra nulla sem vitae neque. Donec sed odio dui. Nulla vitae elit
+            libero, a pharetra augue. Vestibulum id ligula porta felis euismod
+            semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+            dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia
+            quam venenatis vestibulum. Cras justo odio, dapibus ac facilisis in,
+            egestas eget quam. Etiam porta sem malesuada magna mollis euismod.
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+            Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus
+            mollis interdum.
           </p>
         </div>
       </div>
