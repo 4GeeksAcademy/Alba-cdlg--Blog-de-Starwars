@@ -4,7 +4,7 @@ import { useGlobalContext } from "../context/GlobalContext";
 const CardPlanet = ({ planet, uid }) => {
   const { state, dispatch } = useGlobalContext();
 
-  const isFavorite = state.favorites.some((fav) => fav.id === uid);
+  const isFavorite = state.favorites.some((fav) => fav.uid === uid);
 
   const handleFavorite = () => {
     if (isFavorite) {
@@ -25,8 +25,8 @@ const CardPlanet = ({ planet, uid }) => {
         <h5 className="card-text">{planet.name}</h5>
       </div>
       <div className="d-flex justify-content-between">
-        <Link to={`/planet/${uid}`} className="btn btn-primary">
-          Más información
+        <Link to={`/planet/${uid}`} className="learn-more-btn">
+          Learn more!
         </Link>
         <button
           className={`favorite-btn ${isFavorite ? "active" : ""}`}

@@ -14,9 +14,9 @@ const Home = () => {
 
   return (
     <>
-      <h1>Explorador Starwars</h1>
+      <h1>Starwars Explorer</h1>
 
-      <h2>Planetas</h2>
+      <h2>Planets</h2>
 
       <div className="row">
         {loadingPlanets ? (
