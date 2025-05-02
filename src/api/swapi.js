@@ -13,3 +13,10 @@ export const getPlanetById = async (id) => {
   const data = await response.json();
   return data.result;
 };
+
+export const getCharacterById = async (id) => {
+  const res = await fetch(`https://www.swapi.tech/api/people/${id}`);
+  if (!res.ok) throw new Error("Failed to fetch character");
+  const data = await res.json();
+  return data.result;
+};
