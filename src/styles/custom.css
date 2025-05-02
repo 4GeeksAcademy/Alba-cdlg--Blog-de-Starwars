@@ -45,3 +45,31 @@ body {
     color: gold;
     border-color: gold;
 }
+
+.planet-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 600px;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .planet-grid-titles,
+  .planet-grid-values {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+  }
+  
+  .planet-grid-titles {
+    color: red;
+    font-weight: bold;
+    margin-top: 2rem;
+  }
+  
+  .planet-grid-values {
+    color: red;
+    margin-top: 0.5rem;
+  }
+  
