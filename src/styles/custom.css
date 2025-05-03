@@ -73,3 +73,10 @@ body {
     margin-top: 0.5rem;
   }
   
+  .horizontal-scroll {
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+  }

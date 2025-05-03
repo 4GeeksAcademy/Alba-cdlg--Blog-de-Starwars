@@ -19,7 +19,7 @@ const Home = () => {
 
       <h2>Characters</h2>
 
-      <div className="row">
+      <div className="horizontal-scroll">
         {loadingCharacters ? (
           <p>Loading characters...</p>
         ) : characters && characters.length > 0 ? (
@@ -35,7 +35,7 @@ const Home = () => {
 
       <h2>Planets</h2>
 
-      <div className="row">
+      <div className="horizontal-scroll">
         {loadingPlanets ? (
           <p>Loading planets...</p>
         ) : planets && planets.length > 0 ? (
